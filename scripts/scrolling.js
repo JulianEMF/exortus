@@ -60,13 +60,37 @@ function scrollingControl(){
                 scrollLine4: "Opportunities",
                 scrollLine5: "Subscribe"
             }
-        scrollText.textContent = `${sections[line.id]}`;
-    })});
+            scrollText.textContent = `${sections[line.id]}`;
+        })
+    });
     // RETURNS THE NAME OF THE SECTION WHEN HOVERING ENDS
     lines.forEach(line=>{
-    line.addEventListener('mouseleave', ()=>{
-        scrollText.textContent = currentSection;
-    })});
+        line.addEventListener('mouseleave', ()=>{
+            scrollText.textContent = currentSection;
+        })
+    });
+    // CLICK LISTENERS TO NAVIGATE TO THE SELECTED SECTION
+    lines.forEach(line=>{
+        line.addEventListener('click', (e)=>{
+            switch(e.target.id){
+                case("scrollLine1"):
+                    firstSection.scrollIntoView();
+                    break;
+                case("scrollLine2"):
+                    secondSection.scrollIntoView();
+                    break;
+                case("scrollLine3"):
+                    thirdSection.scrollIntoView();
+                    break;
+                case("scrollLine4"):
+                    fourthSection.scrollIntoView();
+                    break;
+                case("scrollLine5"):
+                    fifthSection.scrollIntoView();
+                    break;
+            }
+        })
+    });
 };
 // EVENT LISTENERS WHEN THE PAGE LOADS AND EVERYTIME A SCROLL HAPPEN
 window.addEventListener('scroll', scrollingControl);

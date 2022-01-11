@@ -728,9 +728,6 @@
     text-decoration: none;
     color: white;
   }
-  /* .full-navigation, .full-header, .button-full-landing-container, .button-full-landing{
-        display: none;
-    } */
   .first-section {
     display: -ms-grid;
     display: grid;
@@ -1331,6 +1328,15 @@
   }
   footer {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .social-buttons {
     display: -webkit-box;
@@ -1345,7 +1351,8 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 40rem;
+    padding: 0;
+    width: 20rem;
   }
   .disclaimer-container {
     width: 100%;
@@ -1358,7 +1365,8 @@
     font-family: 'Roboto Condensed';
     font-size: 0.8rem;
     color: #707070;
-    padding: 0 40rem;
+    padding: 0;
+    width: 30rem;
   }
   .legal-items {
     display: -webkit-box;

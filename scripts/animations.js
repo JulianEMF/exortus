@@ -71,12 +71,6 @@ const scrollingAnimations = () => {
       duration: 1
     });
     
-    ScrollTrigger.create({
-        trigger: ".impact",
-        start: "top center",
-        onEnter: addNewData
-      });
-    
     gsap.from(".news",{
       scrollTrigger: {
         trigger: ".news",
@@ -115,15 +109,13 @@ const scrollingAnimations = () => {
       x: -screenWidth,
       duration: 1
     });
-    }else{
-      gsap.from(".scrolling-lines",{opacity: 0, duration: 4});
-      }
-    }
-    
+  }else{
+    gsap.from(".scrolling-lines",{opacity: 0, duration: 4});
+  }
+}
+
 // LOADS THE ANIMATIONS ON LOAD
 window.addEventListener('load', scrollingAnimations);
-
-
 
 //IMPACT SECTION --------------------------------------------------//
 const carbonMonoxide = document.querySelector('.carbon-monoxide');
@@ -132,7 +124,7 @@ const ammonia = document.querySelector('.ammonia');
 const lastUpdate = document.querySelector('.last-update');
 
 const addNewData = async() =>{
-    var results = await getNewData();
+    let results = await getNewData();
     const updatedTime = results[3];
     lastUpdate.innerHTML = updatedTime;
     incrementNumber();
@@ -159,10 +151,10 @@ const getNewData = async() =>{
 async function incrementNumber(){
   const dataPollution = await getNewData();
   const pollutionOutput = [carbonMonoxide, fineParticles, ammonia];
-  var polOutIndex = 0;
+  let polOutIndex = 0;
   for (let i=0; i<pollutionOutput.length; i++){
-    var element = pollutionOutput[polOutIndex];
-    var finalNumber = dataPollution[polOutIndex];
+    let element = pollutionOutput[polOutIndex];
+    let finalNumber = dataPollution[polOutIndex];
     if (finalNumber < 1){
       incrementNumberRecursiveFloat(0, finalNumber, element);
     }else{
@@ -192,3 +184,10 @@ function incrementNumberRecursiveFloat(i, finalNumber, element) {
     }, speedFloat);
   }
 }
+
+// EXECUTES THE IMPACT ANIMATION WHEN THE SCREEN SCROLLS TO TRIGGER IT
+ScrollTrigger.create({
+  trigger: ".impact",
+  start: "top center",
+  onEnter: addNewData
+});

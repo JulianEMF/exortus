@@ -585,10 +585,6 @@
         color: white;
     }
 
-    /* .full-navigation, .full-header, .button-full-landing-container, .button-full-landing{
-        display: none;
-    } */
-
     .first-section{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -1047,6 +1043,9 @@
 
     footer{
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .social-buttons{
@@ -1054,7 +1053,8 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        padding: 0 40rem;
+        padding: 0;
+        width: 20rem;
     }
 
     .disclaimer-container{
@@ -1069,7 +1069,8 @@
         font-family: 'Roboto Condensed';
         font-size: 0.8rem;
         color:rgb(112, 112, 112);
-        padding: 0 40rem;
+        padding: 0;
+        width: 30rem;
     }
 
     .legal-items{
