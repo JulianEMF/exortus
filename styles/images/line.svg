@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg911"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs908">
+    <style
+       id="style972">
+      .a {
+        fill: #ebfbf7;
+      }
+    </style>
+  </defs>
+  <g
+     id="layer1">
+    <g
+       id="g982"
+       transform="matrix(0.26458333,0,0,0.26458333,71.384078,152.66553)"
+       style="fill:#ffffff">
+      <polygon
+         class="a"
+         points="385.06,38.67 423.72,0 316.61,0 277.94,38.67 "
+         id="polygon976"
+         style="fill:#ffffff" />
+      <polygon
+         class="a"
+         points="259.94,38.67 298.61,0 258.78,0 220.11,38.67 "
+         id="polygon978"
+         style="fill:#ffffff" />
+      <polygon
+         class="a"
+         points="202.11,38.67 240.78,0 38.67,0 0,38.67 "
+         id="polygon980"
+         style="fill:#ffffff" />
+    </g>
+  </g>
+</svg>
