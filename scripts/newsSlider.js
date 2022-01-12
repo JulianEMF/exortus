@@ -25,7 +25,7 @@ const buildNewsSlider = () => {
     setTimeout(()=>{moveToNextSlide()}, 500);
   });
   
-  var slideWidth = slides[index].clientWidth;
+  let slideWidth = slides[index].clientWidth;
   
   slide.style.transform = `translateX(${-slideWidth * index}px)`;
   
@@ -78,4 +78,4 @@ const buildNewsSlider = () => {
   startSlide();
 }
 
-// buildNewsSlider();
+buildNewsSlider();
