@@ -22,7 +22,7 @@ const buildNewsSlider = () => {
   window.addEventListener("resize", function() {
     const newWidth = slide.clientWidth;
     slideWidth = newWidth;
-    setTimeout(()=>{moveToNextSlide()}, 500);
+    setTimeout(()=>{moveToNextSlide()}, 3000);
   });
   
   let slideWidth = slides[index].clientWidth;

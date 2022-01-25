@@ -258,7 +258,7 @@
         position: absolute;
         left: 45%;
         right: 45%;
-        top: 65%;
+        top: 75%;
     }
 
     .how-started{
@@ -534,7 +534,7 @@
     }
 }
 
-/* Media query for small devices */
+/* Media query for medium devices */
 @media all and (min-width: 501px) and (max-width: 1023px){
     .social-buttons{
         padding: 0 10rem;
@@ -551,6 +551,7 @@
     }
 }
 
+/* Media query for large devices */
 @media all and (min-width: 1024px){
     *{
         box-sizing: border-box;
