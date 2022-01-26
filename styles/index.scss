@@ -450,12 +450,11 @@
     }
     #next-btn, #prev-btn{
         cursor: pointer;
-        font-size: 30px;
         border: none;
         padding: 15px;
         fill: white;
         stroke: white;
-        width: 5%;
+        width: 3rem;
     }
     #next-btn:focus, #prev-btn:focus{
          outline: none;
@@ -995,12 +994,11 @@
     }
     #next-btn, #prev-btn{
         cursor: pointer;
-        font-size: 30px;
         border: none;
         padding: 15px;
-        fill: white;
         stroke: white;
-        width: 5%;
+        width: 3rem;
+        z-index: 3;
     }
     #next-btn:focus, #prev-btn:focus{
          outline: none;

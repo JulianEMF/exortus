@@ -62,7 +62,7 @@
   .header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -561,12 +561,11 @@
   }
   #next-btn, #prev-btn {
     cursor: pointer;
-    font-size: 30px;
     border: none;
     padding: 15px;
     fill: white;
     stroke: white;
-    width: 5%;
+    width: 3rem;
   }
   #next-btn:focus, #prev-btn:focus {
     outline: none;
@@ -1269,12 +1268,11 @@
   }
   #next-btn, #prev-btn {
     cursor: pointer;
-    font-size: 30px;
     border: none;
     padding: 15px;
-    fill: white;
     stroke: white;
-    width: 5%;
+    width: 3rem;
+    z-index: 3;
   }
   #next-btn:focus, #prev-btn:focus {
     outline: none;

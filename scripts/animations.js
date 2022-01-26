@@ -17,7 +17,7 @@ arrowAnimation();
 const stopArrow = () => {
   arrow.classList.remove("arrow");
   arrow.classList.add("invisible");
-    tween.kill();
+  tween.kill();
 }
 
 document.addEventListener('scroll', stopArrow);
