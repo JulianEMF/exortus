@@ -3,7 +3,7 @@ const slideContainer = document.querySelector('.news');
 var slide = document.querySelector('.slides');
 const nextBtn = document.getElementById('next-btn');
 const prevBtn = document.getElementById('prev-btn');
-const interval = 2000;
+const interval = 3000;
 let slides = document.querySelectorAll('.slide');
 let index = 1;
 let slideId; 
@@ -22,7 +22,6 @@ const buildNewsSlider = () => {
   window.addEventListener("resize", function() {
     const newWidth = slide.clientWidth;
     slideWidth = newWidth;
-    setTimeout(()=>{moveToNextSlide()}, 3000);
   });
   
   let slideWidth = slides[index].clientWidth;
@@ -53,17 +52,21 @@ const buildNewsSlider = () => {
   
   const moveToNextSlide = ()=>{
     slides = getSlides()
-    if(index >= slides.length -1) return;
+    if(index >= slides.length -1){
+      return;
+    }
     index++;
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
-    slide.style.transition = '.7s';
+    slide.style.transition = '.9s';
   };
   
   const moveToPrevSlide = ()=> {
-    if(index <= 0) return;
+    if(index <= 0) {
+      return;
+    }
     index--;
     slide.style.transform = `translateX(${-slideWidth * index}px)`;
-    slide.style.transition = '.7s';
+    slide.style.transition = '.9s';
   };
   
   slideContainer.addEventListener('mouseenter', ()=>{

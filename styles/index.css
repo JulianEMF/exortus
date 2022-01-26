@@ -62,7 +62,7 @@
   .header {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: repeat(3, 1fr);
         grid-template-columns: repeat(3, 1fr);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -863,7 +863,7 @@
     position: absolute;
     left: 50%;
     right: 50%;
-    top: 85%;
+    bottom: 20%;
   }
   .scrolling-lines {
     color: white;
